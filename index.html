@@ -6,6 +6,10 @@
   </head>
   <body>
     <a-scene>
+      <a-entity id="rig" position="-1 3 -2" rotation="0">
+        <a-entity id="camera" camera look-controls></a-entity>
+      </a-entity>
+
       <!--Animation: animation="property: rotation.y; from: 0; to: 360; dur: 4000; dir: normal; loop: true; easing: linear"-->
       <a-entity id="chair">
         <!--Seat-->
@@ -18,6 +22,10 @@
 
         <!--Upper back support-->
         <a-box depth="0.3" height="0.75" width="1.75" position="0 3.25 -4.8" color="#cc3639"></a-box>
+        <a-cylinder color="#cc3639" height="0.3" radius="0.1" position="-0.775 3.625 -4.8" rotation="90"></a-cylinder>
+        <a-cylinder color="#cc3639" height="0.3" radius="0.1" position="0.775 3.625 -4.8" rotation="90"></a-cylinder>
+        <a-box depth="0.3" height="0.2" width="1.55" position="0 3.625 -4.8" color="#cc3639"></a-box>
+
 
         <!--Chair legs-->
         <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position="-.8 0.65 -3.5"></a-cone>
