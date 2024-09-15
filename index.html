@@ -6,30 +6,26 @@
   </head>
   <body>
     <a-scene>
-        <!--Seat-->
-        <a-box depth="2" height="0.25" width="2" position="0 1.5 -4" color="#cc3639"></a-box>
 
-        <!--Lower back support-->
-        <a-box depth="0.1" height="1.75" width="0.3" position="-0.6 2.5 -4.8" color="#8fce00"></a-box>
-        <a-box depth="0.1" height="1.75" width="0.3" position="0 2.5 -4.8" color="#8fce00"></a-box>
-        <a-box depth="0.1" height="1.75" width="0.3" position="0.6 2.5 -4.8" color="#8fce00"></a-box>
+      <!--Seat-->
+      <a-box depth="2" height="0.25" width="2" position="0 1.5 -4" color="#cc3639"></a-box>
 
-        <!--Upper back support-->
-        <a-box depth="0.3" height="0.75" width="1.75" position="0 3.25 -4.8"></a-box>
+      <!--Lower back support-->
+      <a-box depth="0.1" height="1.75" width="0.3" position="-0.6 2.5 -4.8" color="#cc3639"></a-box>
+      <a-box depth="0.1" height="1.75" width="0.3" position="0 2.5 -4.8" color="#cc3639"></a-box>
+      <a-box depth="0.1" height="1.75" width="0.3" position="0.6 2.5 -4.8" color="#cc3639"></a-box>
 
-        <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position="-.8 0.65 -4"></a-cone>
-        <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position=".8 0.65 -3.2"></a-cone>
-        <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position=".8 0.65 -4"></a-cone>
-        <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position="-.8 0.65 -3.2"></a-cone>
+      <!--Upper back support-->
+      <a-box depth="0.3" height="0.75" width="1.75" position="0 3.25 -4.8" color="#cc3639"></a-box>
+
+      <!--Legs-->
+      <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position="-.8 0.65 -4.8"></a-cone>
+      <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position=".8 0.65 -3.2"></a-cone>
+      <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position=".8 0.65 -4.8"></a-cone>
+      <a-cone color="#cc3639" radius-bottom="0.35" radius-top="0.09" height="1.5" position="-.8 0.65 -3.2"></a-cone>
   
-
-      <a-plane
-        position="0 -5 -4"
-        rotation="-90 0 0"
-        width="4"
-        height="4"
-        color="#7BC8A4"
-      ></a-plane>
+      <!--Light-->
+      <a-light type="point" intensity="10" position="0 5 -4"></a-light>
       
       <a-sky color="#77e9ed"></a-sky>
       <a-entity environment="preset: tron"></a-entity>
