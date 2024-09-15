@@ -4,18 +4,24 @@
   </head>
   <body>
     <a-scene>
-      <a-box depth="0.5" height="2" width="0.5" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-cone radius-bottom="2" radius-top="0.5" height="10" position="0 0 0" color="#4CC3D9"></a-cone>
-      <a-cone radius-bottom="2" radius-top="0.5" height="10" position="0 0 -5" color="#4CC3D9"></a-cone>
-      <a-cone radius-bottom="2" radius-top="0.5" height="10" position="5 0 -5" color="#4CC3D9"></a-cone>
-      <a-cone radius-bottom="2" radius-top="0.5" height="10" position="5 0 0" color="#4CC3D9"></a-cone>
+      <a-entity id="rig" position="0 3 0" rotation="-20">
+        <a-entity id="camera" camera look-controls></a-entity>
+      </a-entity>
+
+      <a-box depth="2" height="0.25" width="2" position="0 1.5 -4" color="#cc3639"></a-box>
+      <a-cone radius-bottom="0.5" radius-top="0.1" height="1.5" position="-0.7 0 -4" color="#4CC3D9"></a-cone>
+      <a-cone radius-bottom="0.5" radius-top="0.1" height="1.5" position="-0.7 0 -5" color="#4CC3D9"></a-cone>
+      <a-cone radius-bottom="0.5" radius-top="0.1" height="1.5" position="0.7 0 -5" color="#4CC3D9"></a-cone>
+      <a-cone radius-bottom="0.5" radius-top="0.1" height="1.5" position="0.7 0 -4" color="#4CC3D9"></a-cone>
       
-      <a-box depth="0.1" height="1.75" width="0.3" position="-0.6 1.5 -4.5" color="#8fce00"></a-box>
-      <a-box depth="0.1" height="1.75" width="0.3" position="0 1.5 -4.5" color="#8fce00"></a-box>
-      <a-box depth="0.1" height="1.75" width="0.3" position="0.6 1.5 -4.5" color="#8fce00"></a-box>
+      <a-box depth="0.1" height="1.75" width="0.3" position="-0.6 2.5 -4.8" color="#8fce00"></a-box>
+      <a-box depth="0.1" height="1.75" width="0.3" position="0 2.5 -4.8" color="#8fce00"></a-box>
+      <a-box depth="0.1" height="1.75" width="0.3" position="0.6 2.5 -4.8" color="#8fce00"></a-box>
+
+      <a-box depth="0.3" height="0.75" width="1.75" position="0 3.25 -4.8"></a-box>
 
       <a-plane
-        position="0 0 -4"
+        position="0 -5 -4"
         rotation="-90 0 0"
         width="4"
         height="4"
